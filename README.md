@@ -27,6 +27,16 @@ bash <(curl -fsSL https://raw.githubusercontent.com/yaog6700-bit/xui-traffic-mon
 
 ---
 
+## 🧹 一键卸载
+
+移除 cron 任务、删除脚本和快照，并询问是否删除配置文件（含 Token）和日志：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/yaog6700-bit/xui-traffic-monitor/main/uninstall.sh)
+```
+
+---
+
 ## 功能简介
 
 对数据库里的每个入站端口，脚本会输出：
