@@ -2,8 +2,8 @@
 LOG="/usr/local/x-ui/access.log"
 DB="/etc/x-ui/x-ui.db"
 SNAP="/root/.xui_snap"
-TG_TOKEN="8179734283:AAHPxvnMe0N8mJ4hAmEAWdyZ7B4rZ2BdyFA"
-TG_CHAT="6252019930"
+TG_TOKEN=""
+TG_CHAT=""
 VIDEO='googlevideo|youtube|youtu\.be|ytimg|nflxvideo|netflix|ttvnw|twitch|tiktokcdn|tiktokv|bytevcdn|muscdn|douyin|douyincdn|bilivideo|bilibili|hdslb|iqiyi|qiyi|youku|disney|bamgrid|hbomax|max\.com|hulu|primevideo|amazonvideo|aiv-cdn|vimeo|dailymotion|phncdn|pornhub|xvideos|xnxx'
 NOTVIDEO='accounts\.|login\.|auth\.|oauth|account\.|api\.|clients[0-9]'
 DOWNLOAD='steamcontent|steampowered|steamcdn|steamstatic|pan\.baidu|baidupcs|pcs\.baidu|mega\.nz|mega\.io|mega\.co|mediafire|pikpak|drive\.google|drive\.usercontent|dropbox|onedrive|1drv|wetransfer|rapidgator|1fichier|uploaded\.|sourceforge|objects\.githubusercontent|aliyundrive|alipan|quark|123pan|thunder|xunlei'
