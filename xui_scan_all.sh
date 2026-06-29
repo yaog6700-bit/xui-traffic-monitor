@@ -4,6 +4,13 @@ DB="/etc/x-ui/x-ui.db"
 SNAP="/root/.xui_snap"
 TG_TOKEN=""
 TG_CHAT=""
+# 交互式询问：若上面两项留空，则运行时提示输入（直接回车跳过，仅本地显示）
+if [ -z "$TG_TOKEN" ]; then
+  read -rp "请输入 Telegram Bot Token（直接回车跳过，仅本地显示）: " TG_TOKEN
+fi
+if [ -n "$TG_TOKEN" ] && [ -z "$TG_CHAT" ]; then
+  read -rp "请输入 Telegram Chat ID: " TG_CHAT
+fi
 VIDEO='googlevideo|youtube|youtu\.be|ytimg|nflxvideo|netflix|ttvnw|twitch|tiktokcdn|tiktokv|bytevcdn|muscdn|douyin|douyincdn|bilivideo|bilibili|hdslb|iqiyi|qiyi|youku|disney|bamgrid|hbomax|max\.com|hulu|primevideo|amazonvideo|aiv-cdn|vimeo|dailymotion|phncdn|pornhub|xvideos|xnxx'
 NOTVIDEO='accounts\.|login\.|auth\.|oauth|account\.|api\.|clients[0-9]'
 DOWNLOAD='steamcontent|steampowered|steamcdn|steamstatic|pan\.baidu|baidupcs|pcs\.baidu|mega\.nz|mega\.io|mega\.co|mediafire|pikpak|drive\.google|drive\.usercontent|dropbox|onedrive|1drv|wetransfer|rapidgator|1fichier|uploaded\.|sourceforge|objects\.githubusercontent|aliyundrive|alipan|quark|123pan|thunder|xunlei'
